@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+ <link rel="icon" type="image/x-icon" href="Icons/logo.png">
+<link rel="stylesheet" type="text/css" href="Loelle.css">
+<link rel="stylesheet" href="leile.css">
+ </head>
+
+ <body>
+     <!-- header start -->
+     <header class ="header">
+     	<!-- logo -->
+     	<a href="menu macato.html" class="logo">
+     		<img src="logo.jpg">
+     	</a>
+
+     	<!-- nav bar start -->
+     	<nav class="navbar">
+                  <input type="checkbox" id="check">
+                     <label for="check" class="check-btn">
+                          <i class="fas fa-bard"></i>
+                     </label>
+                  <ul>
+                      <li><a href="macato leila.html">Home</a></li>
+                      <li><a href="menu macato.html">Menu</a><li>
+                      <li><a class="active" href="about us.html">About Us</a><li>
+                  </ul>
+              <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+              </nav>
+              <!-- nav bar end -->
+
+
+   <!-- hyperlink with icons (search, cart, profile,menu button) -->
+   <div class = "icons">
+   <div class="cart-container" onmouseover="showCartform()" onmouseout="hidecartforms()">
+   <a href="4-cart.html">
+   <div class = "fas fa-shopping-cart" id="cartbutton"></div>
+   </a>
+   <div class="cart-form" id="cartform">
+   <form>
+   <div id="cartitems"></div>
+   <div id="total-price">total price: ₱<span id="totalprice">0.00</span></div>
+          </form>
+      </div>
+   </div>  	
+   <!-- hyperlink with icons (search, cart, profile, menu button) -->
+</header>
+<!-- header end -->
+
+<!-- Menu Section -->
+<section class="menu" id="menu">
+<h1 class="heading">OUR <span>PRODUCT</span></h1>
+
+<p class="heading-description">Gilie Luxe: Redefining Elegance and Comfort
+Indulge in the perfect blend of sophistication and function with Gilie Luxe. Designed for those who appreciate the finer things in life, this premium product combines meticulous craftsmanship, timeless design, and unparalleled comfort.
+
+With a focus on quality and attention to detail, Gilie Luxe elevates your everyday experience, offering a seamless fusion of style and practicality. Whether you're making a statement or seeking an indulgent escape, Gilie Luxe is your go-to choice for modern luxury.
+
+Discover the essence of refined living with Gilie Luxe.</p>
+<div class="category-text" style="text-align: center; font-size: 70px;">
+  <h3>HOODIE, DRES, SHIRT</h3>
+</div>
+
+<div class="menu">
+  <div class="container menu-section">
+
+    <!-- Hoodies Section -->
+    <div class="menu-category">
+      <h2>Hoodies</h2>
+      <!-- product 1 - Hoodie Pink -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="hoodpink.jpg" alt="Pink Hoodie" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Pink Hoodie</h3>
+          <div onclick="addtocart('Pink Hoodie', '₱450.00', 'Products/No BG/hoodpink.png', 'item1-s'); return false;">
+            <button id="item1-s"><span>₱450.00</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- product 2 - Hoodie Black -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="hoodblack.jpg" alt="Black Hoodie" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Black Hoodie</h3>
+          <div onclick="addtocart('Black Hoodie', '₱450.00', 'Products/No BG/hoodblack.png', 'item2-s'); return false;">
+            <button id="item2-s"><span>₱450.00</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- product 3 - Hoodie Brown -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="hoodbrown.jpg" alt="Brown Hoodie" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Brown Hoodie</h3>
+          <div onclick="addtocart('Brown Hoodie', '₱450.00', 'Products/No BG/hoodbrown.png', 'item3-s'); return false;">
+            <button id="item3-s"><span>₱450.00</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shirts Section -->
+    <div class="menu-category">
+      <h2>Shirts</h2>
+      <!-- product 4 - Classic White Shirt -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="shrit1.jpg" alt="Classic White Shirt" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Classic White Shirt</h3>
+          <div onclick="addtocart('Classic White Shirt', '₱250.00', 'Products/No BG/shrit1.png', 'item4-s'); return false;">
+            <button id="item4-s"><span>₱250.00</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- product 5 - Casual Blue Shirt -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="shrit2.jpg" alt="Casual Blue Shirt" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Casual Red Shirt</h3>
+          <div onclick="addtocart('Casual Blue Shirt', '₱250.00', 'Products/No BG/shrit2.png', 'item5-s'); return false;">
+            <button id="item5-s"><span>₱250.00</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- product 6 - Comfortable Grey Shirt -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="shrit3.jpg" alt="Comfortable Grey Shirt" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Comfortable Khaki Shirt</h3>
+          <div onclick="addtocart('Comfortable Grey Shirt', '₱250.00', 'Products/No BG/shrit3.png', 'item6-s'); return false;">
+            <button id="item6-s"><span>₱250.00</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dresses Section -->
+    <div class="menu-category">
+      <h2>Dresses</h2>
+      <!-- product 7 - Elegant Red Dress -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="dress1.jpg" alt="Elegant Red Dress" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Elegant Pink Dress</h3>
+          <div onclick="addtocart('Elegant Red Dress', '₱750.00', 'Products/No BG/dress1.png', 'item7-s'); return false;">
+            <button id="item7-s"><span>₱750.00</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- product 8 - Chic Black Dress -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="dress2.jpg" alt="Chic Black Dress" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Chic Pink Dress</h3>
+          <div onclick="addtocart('Chic Black Dress', '₱750.00', 'Products/No BG/dress2.png', 'item8-s'); return false;">
+            <button id="item8-s"><span>₱750.00</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- product 9 - Floral Summer Dress -->
+      <div class="menu-content">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="dress3.jpg" alt="Floral Summer Dress" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <h3>Floral Summer Dress</h3>
+          <div onclick="addtocart('Floral Summer Dress', '₱750.00', 'Products/No BG/dress3.png', 'item9-s'); return false;">
+            <button id="item9-s"><span>₱750.00</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+			</div>
+		</div>
+	
+</section>
+     <!-- Menu Section end -->
+
+     <footer>
+    <p>© 2024 Scoop Paradise. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
